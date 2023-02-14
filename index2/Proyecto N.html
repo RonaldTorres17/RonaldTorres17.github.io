@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matteo</title>
+</head>
+<style >
+ body {
+  background: skyblue;
+  margin: 0;
+  min-height: 30rem;
+  position: relative;
+}
+
+.container_1 {
+  position: relative;
+  display: block;
+  width: 100vmin;
+  height: 100%;
+  margin: auto;
+  z-index: 100;
+}
+
+.large-header {
+  position: relative;
+  width: 100%;
+  min-height: 30rem;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/454/418/529/halo-infinite-4k-wallpaper-preview.jpg); 
+}
+.large-header:after {
+  content: " ";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  color: #ffffff;
+  text-align: left;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+h1 {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  z-index: 3;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+h2 {
+  cursor: pointer;
+}
+h2 span {
+  font-size: 1.6rem;
+  font-family: Raleway, sans-serif;
+  opacity: 0;
+  transition: 0.5s ease;
+  padding-left: 3px;
+  font-weight: 100;
+}
+h2 span.letter {
+  font-size: 4rem;
+  opacity: 1;
+  transition: 0.2s ease;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 100;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #9cd9f9, 0 0 70px #9cd9f9, 0 0 80px #9cd9f9, 0 0 100px #9cd9f9, 0 0 150px #9cd9f9;
+}
+h2:hover {
+  text-shadow: none;
+}
+h2:hover span {
+  opacity: 1;
+}
+h2:hover span.letter {
+  text-shadow: none;
+}
+h2:hover span:nth-of-type(1) {
+  transition-delay: 0.01s;
+}
+h2:hover span:nth-of-type(2) {
+  transition-delay: 0.02s;
+}
+h2:hover span:nth-of-type(3) {
+  transition-delay: 0.03s;
+}
+h2:hover span:nth-of-type(4) {
+  transition-delay: 0.04s;
+}
+h2:hover span:nth-of-type(5) {
+  transition-delay: 0.05s;
+}
+h2:hover span:nth-of-type(6) {
+  transition-delay: 0.06s;
+}
+h2:hover span:nth-of-type(7) {
+  transition-delay: 0.07s;
+}
+h2:hover span:nth-of-type(8) {
+  transition-delay: 0.08s;
+}
+h2:hover span:nth-of-type(9) {
+  transition-delay: 0.09s;
+}
+h2:hover span:nth-of-type(10) {
+  transition-delay: 0.1s;
+}
+h2:hover span:nth-of-type(11) {
+  transition-delay: 0.11s;
+}
+h2:hover span:nth-of-type(12) {
+  transition-delay: 0.12s;
+}
+h2:hover span:nth-of-type(13) {
+  transition-delay: 0.13s;
+}
+h2:hover span:nth-of-type(14) {
+  transition-delay: 0.14s;
+}
+h2:hover span:nth-of-type(15) {
+  transition-delay: 0.15s;
+}
+h2:hover span:nth-of-type(16) {
+  transition-delay: 0.16s;
+}
+h2:hover span:nth-of-type(17) {
+  transition-delay: 0.17s;
+}
+h2:hover span:nth-of-type(18) {
+  transition-delay: 0.18s;
+}
+h2:hover span:nth-of-type(19) {
+  transition-delay: 0.19s;
+}
+h2:hover span:nth-of-type(20) {
+  transition-delay: 0.2s;
+}
+h2:hover span:nth-of-type(21) {
+  transition-delay: 0.21s;
+}
+h2:hover span:nth-of-type(22) {
+  transition-delay: 0.22s;
+}
+h2:hover span:nth-of-type(23) {
+  transition-delay: 0.23s;
+}
+h2:hover span:nth-of-type(24) {
+  transition-delay: 0.24s;
+}
+h2:hover span:nth-of-type(25) {
+  transition-delay: 0.25s;
+}
+h2:hover span:nth-of-type(26) {
+  transition-delay: 0.26s;
+}
+h2:hover span:nth-of-type(27) {
+  transition-delay: 0.27s;
+}
+h2:hover span:nth-of-type(28) {
+  transition-delay: 0.28s;
+}
+h2:hover span:nth-of-type(29) {
+  transition-delay: 0.29s;
+}
+h2:hover span:nth-of-type(30) {
+  transition-delay: 0.3s;
+}
+h2:hover span:nth-of-type(31) {
+  transition-delay: 0.31s;
+}
+h2:hover span {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+footer {
+  position: absolute;
+  color: #9cd9f9;
+  z-index: 5;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 10px;
+}
+footer p {
+  margin: 0;
+}
+
+ 
+.w3-black,
+.w3-hover-black:hover {
+  color: #fff !important;
+  background-color: #ff0081 !important;
+}
+
+.w3-btn,
+.w3-button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #222;
+}
+
+.button-container {
+  position: relative;
+  left: 150px;
+  top: -15px;
+}
+
+</style>
+<body>
+    <body>
+      <video src="" style="min-height: 100%;min-width: 100%;position: fixed;right: 0; bottom: 0;" autoplay="true" muted="true" loop="true" poster="/Diseño sin título.png"></video>
+        <div class="container">
+          <h1>Razones por la que te QUIERO</h1>
+          <div class="container">
+            <div class="content">
+              <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+                <div class="main-title">
+      
+                  <h2 class="thin"><span class="letter">N</span><span class="hidden">es para Noble</span></h2>
+                  <h2 class="thin"><span class="letter"> A</span><span class="hidden">es de Amorosa, un placer saberlo</span> </h2>
+                  <h2 class="thin"><span class="letter">T</span><span class="hidden">por Trascendental, tas teniendo un gran significado en mi vida</span></h2>
+                  <h2 class="thin"><span class="letter"> A</span><span class="hidden">de Angelical, de pies a cabeza</span></h2>
+                  <h2 class="thin"><span class="letter"> L</span><span class="hidden">es de Linda, una Jovencita sin igual</span></h2>
+                  <h2 class="thin"><span class="letter"> I</span><span class="hidden">es por Ingeniosa, siempre tienes algo nuevo que contarme</span></h2>
+                  <h2 class="thin"><span class="letter"> E</span><span class="hidden">es por tu estilo Encantador y profundo</span></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </body>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@1.20.3/TweenLite.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/easing/EasePack.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/raf-polyfill@1.0.0/raf.min.js"></script>
+
+
+    <script>
+        (function() {
+
+var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
+
+// Main
+initHeader();
+initAnimation();
+addListeners();
+
+function initHeader() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    target = {x: width/2, y: height/2};
+
+    largeHeader = document.getElementById('large-header');
+    largeHeader.style.height = height+'px';
+
+    canvas = document.getElementById('demo-canvas');
+    canvas.width = width;
+    canvas.height = height;
+    ctx = canvas.getContext('2d');
+
+     
+    points = [];
+    for(var x = 0; x < width; x = x + width/20) {
+        for(var y = 0; y < height; y = y + height/20) {
+            var px = x + Math.random()*width/20;
+            var py = y + Math.random()*height/20;
+            var p = {x: px, originX: px, y: py, originY: py };
+            points.push(p);
+        }
+    }
+
+ 
+    for(var i = 0; i < points.length; i++) {
+        var closest = [];
+        var p1 = points[i];
+        for(var j = 0; j < points.length; j++) {
+            var p2 = points[j]
+            if(!(p1 == p2)) {
+                var placed = false;
+                for(var k = 0; k < 5; k++) {
+                    if(!placed) {
+                        if(closest[k] == undefined) {
+                            closest[k] = p2;
+                            placed = true;
+                        }
+                    }
+                }
+
+                for(var k = 0; k < 5; k++) {
+                    if(!placed) {
+                        if(getDistance(p1, p2) < getDistance(p1, closest[k])) {
+                            closest[k] = p2;
+                            placed = true;
+                        }
+                    }
+                }
+            }
+        }
+        p1.closest = closest;
+    }
+
+ 
+    for(var i in points) {
+        var c = new Circle(points[i], 2+Math.random()*2, 'rgba(255,255,255,0.3)');
+        points[i].circle = c;
+    }
+}
+
+ 
+function addListeners() {
+    if(!('ontouchstart' in window)) {
+        window.addEventListener('mousemove', mouseMove);
+    }
+    window.addEventListener('scroll', scrollCheck);
+    window.addEventListener('resize', resize);
+}
+
+function mouseMove(e) {
+    var posx = posy = 0;
+    if (e.pageX || e.pageY) {
+        posx = e.pageX;
+        posy = e.pageY;
+    }
+    else if (e.clientX || e.clientY)    {
+        posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+        posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+    }
+    target.x = posx;
+    target.y = posy;
+}
+
+function scrollCheck() {
+    if(document.body.scrollTop > height) animateHeader = false;
+    else animateHeader = true;
+}
+
+function resize() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    largeHeader.style.height = height+'px';
+    canvas.width = width;
+    canvas.height = height;
+}
+
+ 
+function initAnimation() {
+    animate();
+    for(var i in points) {
+        shiftPoint(points[i]);
+    }
+}
+
+function animate() {
+    if(animateHeader) {
+        ctx.clearRect(0,0,width,height);
+        for(var i in points) {
+       
+            if(Math.abs(getDistance(target, points[i])) < 4000) {
+                points[i].active = 0.3;
+                points[i].circle.active = 0.6;
+            } else if(Math.abs(getDistance(target, points[i])) < 20000) {
+                points[i].active = 0.1;
+                points[i].circle.active = 0.3;
+            } else if(Math.abs(getDistance(target, points[i])) < 40000) {
+                points[i].active = 0.02;
+                points[i].circle.active = 0.1;
+            } else {
+                points[i].active = 0;
+                points[i].circle.active = 0;
+            }
+
+            drawLines(points[i]);
+            points[i].circle.draw();
+        }
+    }
+    requestAnimationFrame(animate);
+}
+
+function shiftPoint(p) {
+    TweenLite.to(p, 1+1*Math.random(), {x:p.originX-50+Math.random()*100,
+        y: p.originY-50+Math.random()*100, ease:Circ.easeInOut,
+        onComplete: function() {
+            shiftPoint(p);
+        }});
+}
+
+ 
+function drawLines(p) {
+    if(!p.active) return;
+    for(var i in p.closest) {
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y);
+        ctx.lineTo(p.closest[i].x, p.closest[i].y);
+        ctx.strokeStyle = 'rgba(156,217,249,'+ p.active+')';
+        ctx.stroke();
+    }
+}
+
+function Circle(pos,rad,color) {
+    var _this = this;
+
+   
+    (function() {
+        _this.pos = pos || null;
+        _this.radius = rad || null;
+        _this.color = color || null;
+    })();
+
+    this.draw = function() {
+        if(!_this.active) return;
+        ctx.beginPath();
+        ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
+        ctx.fillStyle = 'rgba(156,217,249,'+ _this.active+')';
+        ctx.fill();
+    };
+}
+
+ 
+function getDistance(p1, p2) {
+    return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
+}
+
+})();
+    </script>
+</body>
+</html>

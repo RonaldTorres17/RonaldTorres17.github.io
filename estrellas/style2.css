@@ -1,0 +1,75 @@
+
+.video{
+   position: fixed;
+    top: 50%; left: 50%;
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+.contenedor{
+    
+    position: relative;
+    z-index: 2;
+    top: 39%;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    
+}
+
+p{
+    font-family:'Courier New', Courier, monospace;
+    font-size:medium;
+    color: #fff;
+    font-size: xx-large;
+    padding: 15%;   
+}
+
+
+button{
+    background: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, blue, purple, rgb(21, 150, 235), deeppink,red, blue, purple, rgb(21, 150, 235), deeppink);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+@keyframes glowing{
+    0%{
+        background-position: 0 0;
+     }
+     50%{
+        background-position: 400% 0;
+     }
+     100%{
+        background-position: 0 0;
+     }
+}
+
+#yesBtn{
+    transform: translate(-100%,0);
+}
+
+#noBtn{
+    position: absolute;
+}
